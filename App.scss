@@ -1,0 +1,39 @@
+.nav {
+   img {
+      height: 50px;
+      position: absolute;
+      top: 0%;
+      left: 0;
+   }
+   nav {
+      max-width: 1250px;
+      margin: auto;
+      justify-content: center;
+      a {
+         padding: 0 20px;
+         font-size: 18px;
+      }
+   }
+}
+
+.index {
+   header {
+      width: 100%;
+      min-height: 100vh;
+      background-image: url('./assets/pexels-pixabay-416778.jpg');
+      background-position: center;
+      background-size: cover;
+      color: white;
+
+      h1 {
+         position: absolute;
+         top: 40%;
+         width: 100%;
+         text-align: center;
+
+         .red-text {
+            color: red;
+         }
+      }
+   }
+}
