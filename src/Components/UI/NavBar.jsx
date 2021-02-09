@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '../../assets/asn-logo.png'
 
 const DivMain = styled.div`
-   background-color: rgba(83, 83, 83, 0.137); // color
+   background-color: white; // color
    position: absolute;
    top: 0;
    width: 100vw;
@@ -23,12 +24,12 @@ const HrUnderline = styled.hr`
    transform-origin: left;
 `
 
-const A = styled.a`
+const A = styled(Link)`
    display: flex;
    flex-direction: column;
    justify-content: center;
    text-decoration: none;
-   color: white;
+   color: black;
    &:hover {
       background-color: rgba(180, 180, 180, 0.397); // color
       ${HrUnderline} {
@@ -156,26 +157,25 @@ const Nav = () => {
       <DivMain className='nav'>
          <img src={logo} alt='ASN logo' />
          <NavEl animate={mobileMenu}>
-            {/* <H2>Projects</H2> */}
-            <A href='/About' style={{ transition: 'opacity 1.3s 0.1s' }}>
+            <A to='/About' style={{ transition: 'opacity 1.3s 0.2s' }}>
                <Li>
                   About
                   <HrUnderline />
                </Li>
             </A>
-            <A href='/Products' style={{ transition: 'opacity 1.3s 0.2s' }}>
+            <A to='/Products' style={{ transition: 'opacity 1.3s 0.4s' }}>
                <Li>
                   Products
                   <HrUnderline />
                </Li>
             </A>
-            <A href='/Apparel' style={{ transition: 'opacity 1.3s 0.3s' }}>
+            <A to='/Apparel' style={{ transition: 'opacity 1.3s 0.6s' }}>
                <Li>
                   Apparel
                   <HrUnderline />
                </Li>
             </A>
-            <A href='/Contacts' style={{ transition: 'opacity 1.3s 0.3s' }}>
+            <A to='/Contact' style={{ transition: 'opacity 1.3s 0.8s' }}>
                <Li>
                   Contact
                   <HrUnderline />
