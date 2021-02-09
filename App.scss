@@ -1,4 +1,5 @@
 .nav {
+   z-index: 5;
    img {
       height: 50px;
       position: absolute;
@@ -20,23 +21,54 @@
    header {
       width: 100%;
       min-height: 100vh;
-      background-image: url('./assets/pexels-pixabay-416778.jpg');
-      background-position: center;
-      background-size: cover;
       color: white;
+
+      .background {
+         // filter: grayscale(0.7);
+         height: 100vh;
+         width: 100%;
+         background-image: url('./assets/pexels-pixabay-209969\ \(1\).jpg');
+         background-position: top;
+         background-size: cover;
+      }
 
       h1 {
          position: absolute;
-         top: 40%;
+         top: 30vh;
          width: 100%;
          text-align: center;
          text-transform: uppercase;
          font-size: 50px;
-         font-weight: 200;
+         font-weight: 400;
 
          .red-text {
             color: red;
+            font-weight: 800;
          }
       }
    }
+}
+
+.about {
+   padding-top: 200px;
+   color: black;
+   text-align: center;
+}
+
+.products {
+   padding-top: 200px;
+   color: black;
+   text-align: center;
+}
+
+.apparel {
+   padding-top: 200px;
+   color: black;
+   text-align: center;
+}
+
+.contact {
+   padding-top: 200px;
+   color: black;
+   text-align: center;
 }

@@ -155,7 +155,9 @@ const Nav = () => {
 
    return (
       <DivMain className='nav'>
-         <img src={logo} alt='ASN logo' />
+         <Link to='/'>
+            <img src={logo} alt='ASN logo' />
+         </Link>
          <NavEl animate={mobileMenu}>
             <A to='/About' style={{ transition: 'opacity 1.3s 0.2s' }}>
                <Li>
