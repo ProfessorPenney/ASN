@@ -155,7 +155,7 @@ const Nav = () => {
 
    return (
       <DivMain className='nav'>
-         <Link to='/'>
+         <Link to='/' title='ASN Home'>
             <img src={logo} alt='ASN logo' />
          </Link>
          <NavEl animate={mobileMenu}>

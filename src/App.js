@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import Products from './Components/Products/Products'
 import Apparel from './Components/Apparel/Apparel'
 import Contact from './Components/Contact/Contact'
+import Footer from './Components/UI/Footer'
 
 function App() {
    return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/Apparel' component={Apparel} />
             <Route path='/Contact' component={Contact} />
             <Route path='*' render={() => <Redirect to='/' />} />
+            <Footer />
          </Router>
       </div>
    )

@@ -1,3 +1,13 @@
+.App * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .nav {
   z-index: 5;
 }
@@ -17,9 +27,44 @@
           justify-content: center;
 }
 
+.nav nav hr {
+  background-color: black;
+}
+
 .nav nav a {
+  color: black;
   padding: 0 20px;
   font-size: 18px;
+}
+
+footer {
+  height: 200px;
+  margin-top: -200px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+  background-color: #d8d8d8;
+}
+
+footer nav {
+  list-style: none;
+}
+
+footer nav a {
+  color: black;
+}
+
+footer nav a:hover {
+  font-weight: 500;
 }
 
 .index header {
@@ -51,7 +96,81 @@
   font-weight: 800;
 }
 
+.index .site-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  text-align: center;
+}
+
+.index .site-preview div {
+  -ms-flex-preferred-size: 34%;
+      flex-basis: 34%;
+  background-color: #d8d8d8;
+  padding: 20px 5vw;
+}
+
+.index .site-preview div:nth-of-type(2) {
+  background-color: #afafaf;
+}
+
+.index .site-preview div h2 {
+  padding: 30px 0;
+  font-size: 32px;
+}
+
+.index .site-preview div p {
+  padding: 40px 0;
+  font-size: 20px;
+}
+
+.index .site-preview div hr {
+  border: none;
+  height: 2px;
+  width: 30%;
+  background-color: white;
+}
+
+.index .site-preview div a {
+  color: red;
+  -webkit-transition: text-shadow 500ms;
+  transition: text-shadow 500ms;
+}
+
+.index .site-preview div a:hover {
+  text-shadow: 2px -1px 8px white;
+}
+
+.index .about-preview {
+  min-height: 500px;
+  background-color: burlywood;
+  max-width: 1250px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.index .about-preview h2 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+}
+
+.index .about-preview p {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.index .products-preview {
+  background-color: #1b1b44;
+}
+
 .about {
+  min-height: 100vh;
   padding-top: 200px;
   color: black;
   text-align: center;
