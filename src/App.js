@@ -1,6 +1,5 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
-// import Nav from './Components/UI/NavBar'
 import Index from './Components/Index/Index'
 import About from './Components/About/About'
 import Products from './Components/Products/Products'
@@ -12,7 +11,6 @@ function App() {
    return (
       <div className='App'>
          <Router>
-            {/* <Nav /> */}
             <Route exact path='/' component={Index} />
             <Route path='/About' component={About} />
             <Route path='/Products' component={Products} />

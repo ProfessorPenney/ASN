@@ -311,18 +311,21 @@ footer nav a:hover {
 }
 
 .products {
+  min-height: 100vh;
   padding-top: 200px;
   color: black;
   text-align: center;
 }
 
 .apparel {
+  min-height: 100vh;
   padding-top: 200px;
   color: black;
   text-align: center;
 }
 
 .contact {
+  min-height: 100vh;
   padding-top: 200px;
   color: black;
   text-align: center;
