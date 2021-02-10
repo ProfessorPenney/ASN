@@ -1,6 +1,10 @@
 import React from 'react'
-import Nav from '../UI/NavBar'
 import { Link } from 'react-router-dom'
+
+import Nav from '../UI/NavBar'
+import Carousel from '../UI/Carousel'
+
+import apparel from '../Apparel/apparel'
 
 const Index = () => {
    return (
@@ -41,16 +45,28 @@ const Index = () => {
             </div>
          </div>
          <section className='about-preview'>
-            <h2>Our Pledge</h2>
-            <p>
-               We’ve selected and developed healthy and all-natural formulas for your nutritional
-               supplement ARSENAL to ensure only premium ingredients are introduced into your
-               system. We are committed to supporting veterans, law enforcement, and all first
-               responders. With every purchase you make, we give back!
-            </p>
+            <h2>
+               Our <span>Pledge</span>
+            </h2>
+            <div>
+               <p>
+                  We’ve selected and developed healthy and all-natural formulas for your nutritional
+                  supplement ARSENAL to ensure only premium ingredients are introduced into your
+                  system. We are committed to supporting veterans, law enforcement, and all first
+                  responders. With every purchase you make, we give back!
+               </p>
+               <Link to='/About'>Learn More</Link>
+            </div>
          </section>
-         <section className='products-preview'></section>
-         <section className='apparel-preview'></section>
+         <section className='products-preview'>
+            <h2>Products</h2>
+            <p>Coming Soon</p>
+            {/* <div className='product-carousel'></div> */}
+         </section>
+         <section className='apparel-preview'>
+            <h2>Apparel</h2>
+            <Carousel apparel={apparel} />
+         </section>
       </div>
    )
 }
