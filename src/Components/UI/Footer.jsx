@@ -11,16 +11,19 @@ const Footer = () => {
          <div>
             <h3>Site Map</h3>
             <nav>
-               <Link to='/About' style={{ transition: 'opacity 1.3s 0.2s' }}>
+               <Link to='/Home'>
+                  <li>Home</li>
+               </Link>
+               <Link to='/About'>
                   <li>About</li>
                </Link>
-               <Link to='/Products' style={{ transition: 'opacity 1.3s 0.4s' }}>
+               <Link to='/Products'>
                   <li>Products</li>
                </Link>
-               <Link to='/Apparel' style={{ transition: 'opacity 1.3s 0.6s' }}>
+               <Link to='/Apparel'>
                   <li>Apparel</li>
                </Link>
-               <Link to='/Contact' style={{ transition: 'opacity 1.3s 0.8s' }}>
+               <Link to='/Contact'>
                   <li>Contact</li>
                </Link>
             </nav>
