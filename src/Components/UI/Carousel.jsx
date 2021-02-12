@@ -2,31 +2,33 @@ import React, { useState } from 'react'
 import Slide from './Slide'
 
 const Carousel = ({ apparel }) => {
-   const [index1, setIndex1] = useState(0)
-   const [index2, setIndex2] = useState(1)
-   const [index3, setIndex3] = useState(2)
+   const [numOfSlides, setNumOfSlides] = useState(2)
+   const [position, setPosition] = useState(0)
+   const [shiftLeft, setShiftLeft] = useState(false)
 
    const rightButton = () => {
-      setIndex1(current => (current + 1 === apparel.length ? 0 : current + 1))
-      setIndex2(current => (current + 1 === apparel.length ? 0 : current + 1))
-      setIndex3(current => (current + 1 === apparel.length ? 0 : current + 1))
+      if (position + 2 > numOfSlides) setNumOfSlides(num => num + 1)
+      setTimeout(() => {
+         setPosition(val => val + 1)
+      }, 1)
    }
 
    const leftButton = () => {
-      setIndex1(current => (current === 0 ? apparel.length - 1 : current - 1))
-      setIndex2(current => (current === 0 ? apparel.length - 1 : current - 1))
-      setIndex3(current => (current === 0 ? apparel.length - 1 : current - 1))
+      setPosition(val => val - 1)
+   }
+
+   let slides = []
+   for (let i = 0; i < numOfSlides; i++) {
+      slides.push(<Slide key={i} firstItem={i * 3} apparel={apparel} position={position} />)
    }
 
    return (
       <div className='carousel'>
-         <button className='left' onClick={() => leftButton()}>
+         <button className='left' onClick={() => leftButton()} disabled={!position}>
             <hr className='top' />
             <hr className='bottom' />
          </button>
-         <Slide item={apparel[index1]} />
-         <Slide item={apparel[index2]} />
-         <Slide item={apparel[index3]} />
+         {slides}
          <button className='right' onClick={() => rightButton()}>
             <hr className='top' />
             <hr className='bottom' />

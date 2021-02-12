@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import Index from './Components/Index/Index'
 import About from './Components/About/About'
 import Products from './Components/Products/Products'
-import Apparel from './Components/Apparel/Apparel'
+import Apparel from './Components/Apparel/Apparel.jsx'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/UI/Footer'
 

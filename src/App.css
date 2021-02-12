@@ -1,3 +1,7 @@
+.App {
+  width: 100%;
+}
+
 .App * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -38,19 +42,15 @@
 }
 
 .carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #f8f8f8;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+  height: 500px;
+  overflow-x: hidden;
 }
 
 .carousel button {
+  z-index: 2;
+  position: absolute;
   height: 50px;
   background-color: red;
   border: none;
@@ -59,6 +59,7 @@
   transition: -webkit-transform 200ms linear;
   transition: transform 200ms linear;
   transition: transform 200ms linear, -webkit-transform 200ms linear;
+  cursor: pointer;
 }
 
 .carousel button hr {
@@ -69,6 +70,11 @@
   border-radius: 2px;
 }
 
+.carousel button.left {
+  left: 20px;
+  top: 45%;
+}
+
 .carousel button.left .top {
   -webkit-transform: translateY(-3px) translateX(-1px) rotate(-45deg);
           transform: translateY(-3px) translateX(-1px) rotate(-45deg);
@@ -77,6 +83,11 @@
 .carousel button.left .bottom {
   -webkit-transform: translateY(2px) translateX(-1px) rotate(45deg);
           transform: translateY(2px) translateX(-1px) rotate(45deg);
+}
+
+.carousel button.right {
+  right: 20px;
+  top: 45%;
 }
 
 .carousel button.right .top {
@@ -94,9 +105,37 @@
           transform: scale(1.2);
 }
 
+.carousel button:disabled {
+  background-color: rgba(128, 128, 128, 0.274);
+}
+
 .carousel .slide {
-  width: 400px;
-  padding: 20px;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  width: 100%;
+}
+
+.carousel .slide a {
+  margin: 20px;
+  max-width: 350px;
+}
+
+.carousel .slide.shift-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .carousel .slide img {
@@ -135,6 +174,7 @@ footer nav a:hover {
 
 .index {
   margin-bottom: 200px;
+  width: 100%;
 }
 
 .index header {
@@ -277,7 +317,6 @@ footer nav a:hover {
   background-color: lightgray;
   border: 2px solid black;
   min-height: 400px;
-  width: 100vw;
   text-align: center;
   padding-top: 180px;
   padding-bottom: 200px;
@@ -293,7 +332,6 @@ footer nav a:hover {
 
 .index .apparel-preview {
   min-height: 400px;
-  width: 100vw;
   padding-top: 80px;
   padding-bottom: 200px;
 }

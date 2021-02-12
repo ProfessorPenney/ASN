@@ -5,9 +5,9 @@ import pic4 from '../../assets/redshirt.jpg'
 
 const apparel = [
    { name: 'Black Shirt', pic: pic1 },
-   { name: 'item2', pic: pic2 },
-   { name: 'item3', pic: pic3 },
-   { name: 'item4', pic: pic4 }
+   { name: 'Blue Shirt', pic: pic2 },
+   { name: 'Olive Shirt', pic: pic3 },
+   { name: 'Red Shirt', pic: pic4 }
 ]
 
 export default apparel
