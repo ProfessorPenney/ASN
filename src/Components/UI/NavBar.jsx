@@ -4,10 +4,11 @@ import styled from 'styled-components'
 import logo from '../../assets/asn-logo.png'
 
 const DivMain = styled.div`
-   background-color: white; // color
+   /* background-color: black; // color */
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.671), rgba(110, 110, 110, 0));
    position: absolute;
    top: 0;
-   width: 100vw;
+   width: 100%;
    height: 60px;
 `
 
@@ -31,7 +32,7 @@ const A = styled(Link)`
    text-decoration: none;
    color: black;
    &:hover {
-      background-color: rgba(180, 180, 180, 0.397); // color
+      /* background-color: rgba(180, 180, 180, 0.397); // color */
       ${HrUnderline} {
          width: 100%;
          transform: rotate(180deg);
