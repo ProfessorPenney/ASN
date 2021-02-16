@@ -5,11 +5,12 @@ import Nav from '../UI/NavBar'
 import Carousel from '../UI/Carousel'
 
 import apparel from '../Apparel/apparel'
+import whiteLogo from '../../assets/ASN-white-logo.png'
 
 const Index = () => {
    return (
       <div className='index'>
-         <Nav />
+         <Nav logo={whiteLogo} />
          <header>
             <div className='background' />
             <h1>

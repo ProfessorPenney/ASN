@@ -293,6 +293,7 @@ footer {
    padding-top: 200px;
    color: black;
    text-align: center;
+   margin-bottom: 200px;
 
    .nav nav a:nth-of-type(1) hr {
       background-color: red;
@@ -317,10 +318,20 @@ footer {
    padding-top: 200px;
    color: black;
    text-align: center;
+   margin-bottom: 200px;
 
    .nav nav a:nth-of-type(3) hr {
       background-color: red;
       width: 100%;
+   }
+
+   .shirt-div {
+      max-width: 1250px;
+      margin: auto;
+      padding-bottom: 200px;
+      img {
+         width: 100%;
+      }
    }
 }
 

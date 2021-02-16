@@ -364,6 +364,7 @@ footer nav a:hover {
   padding-top: 200px;
   color: black;
   text-align: center;
+  margin-bottom: 200px;
 }
 
 .about .nav nav a:nth-of-type(1) hr {
@@ -388,10 +389,21 @@ footer nav a:hover {
   padding-top: 200px;
   color: black;
   text-align: center;
+  margin-bottom: 200px;
 }
 
 .apparel .nav nav a:nth-of-type(3) hr {
   background-color: red;
+  width: 100%;
+}
+
+.apparel .shirt-div {
+  max-width: 1250px;
+  margin: auto;
+  padding-bottom: 200px;
+}
+
+.apparel .shirt-div img {
   width: 100%;
 }
 

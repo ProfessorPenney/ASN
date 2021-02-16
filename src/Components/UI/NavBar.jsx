@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../../assets/ASN-white-logo.png'
+import blackLogo from '../../assets/asn-logo-nowords.png'
 
 const DivMain = styled.div`
    /* background-color: black; // color */
@@ -151,13 +151,13 @@ const Li = styled.li`
    list-style: none;
 `
 
-const Nav = () => {
+const Nav = ({ logo }) => {
    const [mobileMenu, setMobileMenu] = useState(false)
 
    return (
       <DivMain className='nav'>
          <Link to='/' title='ASN Home'>
-            <img src={logo} alt='ASN logo' />
+            <img src={logo ? logo : blackLogo} alt='ASN logo' />
          </Link>
          <NavEl animate={mobileMenu}>
             <A to='/About' style={{ transition: 'opacity 1.3s 0.2s' }}>

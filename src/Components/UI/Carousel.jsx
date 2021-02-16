@@ -4,7 +4,6 @@ import Slide from './Slide'
 const Carousel = ({ apparel }) => {
    const [numOfSlides, setNumOfSlides] = useState(2)
    const [position, setPosition] = useState(0)
-   const [shiftLeft, setShiftLeft] = useState(false)
 
    const rightButton = () => {
       if (position + 2 > numOfSlides) setNumOfSlides(num => num + 1)
