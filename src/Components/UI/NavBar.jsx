@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import logo from '../../assets/asn-logo.png'
+import logo from '../../assets/ASN-white-logo.png'
 
 const DivMain = styled.div`
    /* background-color: black; // color */
