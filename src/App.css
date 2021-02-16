@@ -14,6 +14,7 @@
 
 .nav {
   z-index: 5;
+  background-image: none;
 }
 
 .nav img {
@@ -32,11 +33,11 @@
 }
 
 .nav nav hr {
-  background-color: white;
+  background-color: black;
 }
 
 .nav nav a {
-  color: white;
+  color: black;
   padding: 0 20px;
   font-size: 18px;
 }
@@ -179,6 +180,19 @@ footer nav a:hover {
 .index {
   margin-bottom: 200px;
   width: 100%;
+}
+
+.index .nav {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.671)), to(rgba(110, 110, 110, 0)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.671), rgba(110, 110, 110, 0));
+}
+
+.index .nav nav a {
+  color: white;
+}
+
+.index .nav nav hr {
+  background-color: white;
 }
 
 .index header {
@@ -352,11 +366,21 @@ footer nav a:hover {
   text-align: center;
 }
 
+.about .nav nav a:nth-of-type(1) hr {
+  background-color: red;
+  width: 100%;
+}
+
 .products {
   min-height: 100vh;
   padding-top: 200px;
   color: black;
   text-align: center;
+}
+
+.products .nav nav a:nth-of-type(2) hr {
+  background-color: red;
+  width: 100%;
 }
 
 .apparel {
@@ -366,10 +390,20 @@ footer nav a:hover {
   text-align: center;
 }
 
+.apparel .nav nav a:nth-of-type(3) hr {
+  background-color: red;
+  width: 100%;
+}
+
 .contact {
   min-height: 100vh;
   padding-top: 200px;
   color: black;
   text-align: center;
+}
+
+.contact .nav nav a:nth-of-type(4) hr {
+  background-color: red;
+  width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

@@ -5,7 +5,7 @@ import logo from '../../assets/ASN-white-logo.png'
 
 const DivMain = styled.div`
    /* background-color: black; // color */
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.671), rgba(110, 110, 110, 0));
+   /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.671), rgba(110, 110, 110, 0)); */
    position: absolute;
    top: 0;
    width: 100%;
@@ -20,7 +20,7 @@ const HrUnderline = styled.hr`
    border: none;
    height: 2px;
    background-color: white; // color
-   transition: all 0ms linear 250ms, width 250ms linear;
+   transition: all 0ms linear 150ms, width 150ms linear;
    transform: rotate(0);
    transform-origin: left;
 `
