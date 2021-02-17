@@ -150,7 +150,6 @@
 footer {
   min-height: 200px;
   margin-top: -200px;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,23 +157,60 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 50px;
-  background-color: #d8d8d8;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: black;
+  color: #f0f0f0;
 }
 
-footer nav {
+footer p span {
+  color: red;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div h3 {
+  margin: 0;
+}
+
+footer div svg {
+  fill: red;
+  position: relative;
+  bottom: -6px;
+  width: 12px;
+}
+
+footer div nav {
+  width: 100px;
   list-style: none;
 }
 
-footer nav a {
+footer div nav a {
   color: black;
 }
 
-footer nav a:hover {
-  font-weight: 500;
+footer div nav a:hover {
+  font-weight: 700;
+  color: red;
+}
+
+footer div nav a:hover svg {
+  width: 10px;
+  -webkit-transition: width 200ms;
+  transition: width 200ms;
+}
+
+footer div nav a svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 0px;
 }
 
 .index {

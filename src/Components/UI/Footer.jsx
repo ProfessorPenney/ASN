@@ -1,30 +1,51 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Arrow2 from './DoubleArrow'
+import Arrow1 from './SingleArow'
+
 const Footer = () => {
    return (
       <footer>
          <p>
-            Copyright &#169; {new Date().getFullYear()} Arsenal Sports Nutrition - All Rights
-            Reserved
+            Copyright &#169; {new Date().getFullYear()} <span>Arsenal Sports Nutrition</span> - All
+            Rights Reserved
          </p>
          <div>
-            <h3>Site Map</h3>
+            <h3>
+               Navigation &nbsp;
+               <Arrow2 /> &nbsp;
+            </h3>
             <nav>
                <Link to='/Home'>
-                  <li>Home</li>
+                  <li>
+                     Home &nbsp;
+                     <Arrow1 />
+                  </li>
                </Link>
                <Link to='/About'>
-                  <li>About</li>
+                  <li>
+                     About &nbsp;
+                     <Arrow1 />
+                  </li>
                </Link>
                <Link to='/Products'>
-                  <li>Products</li>
+                  <li>
+                     Products &nbsp;
+                     <Arrow1 />
+                  </li>
                </Link>
                <Link to='/Apparel'>
-                  <li>Apparel</li>
+                  <li>
+                     Apparel &nbsp;
+                     <Arrow1 />
+                  </li>
                </Link>
                <Link to='/Contact'>
-                  <li>Contact</li>
+                  <li>
+                     Contact &nbsp;
+                     <Arrow1 />
+                  </li>
                </Link>
             </nav>
          </div>
