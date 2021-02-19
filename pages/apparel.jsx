@@ -1,8 +1,8 @@
-import React from 'react'
-import Nav from '../UI/NavBar'
-import shirtsPic from '../../assets/shirts.jpg'
+import Nav from '../Components/NavBar'
+// import shirtsPic from '../assets/shirts.jpg'
 
-const Apparel = () => {
+const apparel = () => {
+   const shirtsPic = '/assets/shirts.jpg'
    return (
       <div className='apparel'>
          <Nav />
@@ -14,4 +14,4 @@ const Apparel = () => {
    )
 }
 
-export default Apparel
+export default apparel

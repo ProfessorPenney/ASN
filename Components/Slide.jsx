@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import { v4 as uuidv4 } from 'uuid'
 
 const Slide = ({ firstItem, apparel, position }) => {
@@ -24,7 +24,7 @@ const Slide = ({ firstItem, apparel, position }) => {
          className='slide'
          style={{ transform: `translateX(${150 * (firstItem / 3 - position)}%` }}>
          {[item1, item2, item3].map(i => (
-            <Link key={uuidv4()} to='/Apparel'>
+            <Link key={uuidv4()} href='/Apparel'>
                <img src={apparel[i].pic} alt={apparel[i].name} />
             </Link>
          ))}

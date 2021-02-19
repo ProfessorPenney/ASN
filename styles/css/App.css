@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .App {
   width: 100%;
 }
@@ -240,7 +244,7 @@ footer div nav a svg {
 .index header .background {
   height: 100vh;
   width: 100%;
-  background-image: url("./assets/pexels-pixabay-209969 (1).jpg");
+  background-image: url("../../public/assets//pexels-pixabay-209969 (1).jpg");
   background-position: top;
   background-size: cover;
 }
@@ -468,7 +472,7 @@ footer div nav a svg {
           transform-origin: left;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background-image: url("./assets/asn-logo-nowords.png");
+  background-image: url("../../public/assets/asn-logo-nowords.png");
   background-repeat: no-repeat;
   opacity: 0.5;
 }

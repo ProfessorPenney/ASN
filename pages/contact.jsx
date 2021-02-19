@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import Nav from '../UI/NavBar'
+import { useState } from 'react'
+import Nav from '../Components/NavBar'
 
-const Contact = () => {
+const contact = () => {
    const [feedback, setFeedback] = useState('')
    const [name, setName] = useState('')
    const [email, setEmail] = useState('')
@@ -97,4 +97,4 @@ const Contact = () => {
    )
 }
 
-export default Contact
+export default contact

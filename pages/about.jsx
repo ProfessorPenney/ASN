@@ -1,7 +1,6 @@
-import React from 'react'
-import Nav from '../UI/NavBar'
+import Nav from '../Components/NavBar'
 
-const About = () => {
+const about = () => {
    return (
       <div className='about'>
          <Nav />
@@ -10,4 +9,4 @@ const About = () => {
    )
 }
 
-export default About
+export default about

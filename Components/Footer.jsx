@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 
 import Arrow2 from './DoubleArrow'
 import Arrow1 from './SingleArow'
@@ -17,31 +16,31 @@ const Footer = () => {
                <Arrow2 /> &nbsp;
             </h3>
             <nav>
-               <Link to='/Home'>
+               <Link href='/Home'>
                   <li>
                      Home &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link to='/About'>
+               <Link href='/About'>
                   <li>
                      About &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link to='/Products'>
+               <Link href='/Products'>
                   <li>
                      Products &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link to='/Apparel'>
+               <Link href='/Apparel'>
                   <li>
                      Apparel &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link to='/Contact'>
+               <Link href='/Contact'>
                   <li>
                      Contact &nbsp;
                      <Arrow1 />

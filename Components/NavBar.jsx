@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import Link from 'next/link'
 import styled from 'styled-components'
-import blackLogo from '../../assets/asn-logo-nowords.png'
+// import blackLogo from '../assets/asn-logo-nowords.png'
+
+const blackLogo = '/assets/asn-logo-nowords.png'
 
 const DivMain = styled.div`
    /* background-color: black; // color */
@@ -156,29 +158,29 @@ const Nav = ({ logo }) => {
 
    return (
       <DivMain className='nav'>
-         <Link to='/' title='ASN Home'>
+         <Link href='/' title='ASN Home'>
             <img src={logo ? logo : blackLogo} alt='ASN logo' />
          </Link>
          <NavEl animate={mobileMenu}>
-            <A to='/About' style={{ transition: 'opacity 1.3s 0.2s' }}>
+            <A href='/about' style={{ transition: 'opacity 1.3s 0.2s' }}>
                <Li>
                   About
                   <HrUnderline />
                </Li>
             </A>
-            <A to='/Products' style={{ transition: 'opacity 1.3s 0.4s' }}>
+            <A href='/products' style={{ transition: 'opacity 1.3s 0.4s' }}>
                <Li>
                   Products
                   <HrUnderline />
                </Li>
             </A>
-            <A to='/Apparel' style={{ transition: 'opacity 1.3s 0.6s' }}>
+            <A href='/apparel' style={{ transition: 'opacity 1.3s 0.6s' }}>
                <Li>
                   Apparel
                   <HrUnderline />
                </Li>
             </A>
-            <A to='/Contact' style={{ transition: 'opacity 1.3s 0.8s' }}>
+            <A href='/contact' style={{ transition: 'opacity 1.3s 0.8s' }}>
                <Li>
                   Contact
                   <HrUnderline />

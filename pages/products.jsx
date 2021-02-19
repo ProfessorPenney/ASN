@@ -1,5 +1,4 @@
-import React from 'react'
-import Nav from '../UI/NavBar'
+import Nav from '../Components/NavBar'
 
 const Products = () => {
    return (
