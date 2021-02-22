@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import styled from 'styled-components'
+import navStyles from '../styles/css/NavBar.module.css'
 // import blackLogo from '../assets/asn-logo-nowords.png'
 
 const blackLogo = '/assets/asn-logo-nowords.png'
@@ -27,7 +28,8 @@ const HrUnderline = styled.hr`
    transform-origin: left;
 `
 
-const A = styled(Link)`
+// const A = styled(Link)`
+const A = styled.a`
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -157,35 +159,43 @@ const Nav = ({ logo }) => {
    const [mobileMenu, setMobileMenu] = useState(false)
 
    return (
-      <DivMain className='nav'>
+      <DivMain className={`nav ${navStyles.nav}`}>
          <Link href='/' title='ASN Home'>
             <img src={logo ? logo : blackLogo} alt='ASN logo' />
          </Link>
          <NavEl animate={mobileMenu}>
-            <A href='/about' style={{ transition: 'opacity 1.3s 0.2s' }}>
-               <Li>
-                  About
-                  <HrUnderline />
-               </Li>
-            </A>
-            <A href='/products' style={{ transition: 'opacity 1.3s 0.4s' }}>
-               <Li>
-                  Products
-                  <HrUnderline />
-               </Li>
-            </A>
-            <A href='/apparel' style={{ transition: 'opacity 1.3s 0.6s' }}>
-               <Li>
-                  Apparel
-                  <HrUnderline />
-               </Li>
-            </A>
-            <A href='/contact' style={{ transition: 'opacity 1.3s 0.8s' }}>
-               <Li>
-                  Contact
-                  <HrUnderline />
-               </Li>
-            </A>
+            <Link href='/about' passHref>
+               <A style={{ transition: 'opacity 1.3s 0.2s' }}>
+                  <Li>
+                     About
+                     <HrUnderline />
+                  </Li>
+               </A>
+            </Link>
+            <Link href='/products' passHref>
+               <A style={{ transition: 'opacity 1.3s 0.4s' }}>
+                  <Li>
+                     Products
+                     <HrUnderline />
+                  </Li>
+               </A>
+            </Link>
+            <Link href='/apparel' passHref>
+               <A style={{ transition: 'opacity 1.3s 0.6s' }}>
+                  <Li>
+                     Apparel
+                     <HrUnderline />
+                  </Li>
+               </A>
+            </Link>
+            <Link href='/contact' passHref>
+               <A style={{ transition: 'opacity 1.3s 0.8s' }}>
+                  <Li>
+                     Contact
+                     <HrUnderline />
+                  </Li>
+               </A>
+            </Link>
          </NavEl>
          <DivBurger animate={mobileMenu} onClick={() => setMobileMenu(value => !value)}>
             <Hr1 className='burg1' />

@@ -1,0 +1,31 @@
+.nav {
+  z-index: 5;
+  background-image: none;
+}
+
+.nav img {
+  height: 50px;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.nav nav {
+  max-width: 1250px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav nav hr {
+  background-color: black;
+}
+
+.nav nav a {
+  color: black;
+  padding: 0 20px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=NavBar.module.css.map */
