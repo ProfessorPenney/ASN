@@ -80,10 +80,8 @@ html a {
   background-color: red;
   border: none;
   border: 2px solid transparent;
-  -webkit-transition: -webkit-transform 200ms linear;
-  transition: -webkit-transform 200ms linear;
-  transition: transform 200ms linear;
-  transition: transform 200ms linear, -webkit-transform 200ms linear;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
   cursor: pointer;
 }
 
@@ -128,10 +126,27 @@ html a {
 .carousel button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  background-color: white;
+  border: 2px solid red;
+}
+
+.carousel button:hover hr {
+  background-color: red;
 }
 
 .carousel button:disabled {
   background-color: rgba(128, 128, 128, 0.274);
+}
+
+.carousel button:disabled:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background-color: rgba(128, 128, 128, 0.274);
+  border: 2px solid transparent;
+}
+
+.carousel button:disabled:hover hr {
+  background-color: white;
 }
 
 .carousel .slide {
@@ -162,6 +177,7 @@ html a {
   width: 100%;
   margin: 20px;
   max-width: 350px;
+  cursor: pointer;
 }
 
 .carousel .slide:first-of-type {
@@ -264,6 +280,8 @@ footer div nav li svg {
   width: 100%;
   background-position: top;
   background-size: cover;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 .index header .bg1 {
