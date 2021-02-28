@@ -256,17 +256,41 @@ footer div nav a svg {
 }
 
 .index header {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   color: white;
 }
 
 .index header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url("../../public/assets//pexels-pixabay-209969 (1).jpg");
   background-position: top;
   background-size: cover;
+}
+
+.index header .bg1 {
+  background-image: url("../../public/slideshow/pexels-victor-freitas-841130v2.jpg");
+  -webkit-animation: animateBG1 20s infinite;
+          animation: animateBG1 20s infinite;
+  opacity: 1;
+}
+
+.index header .bg2 {
+  background-image: url("../../public/slideshow/pexels-pixabay-40751v2.jpg");
+  -webkit-animation: animateBG2 20s infinite;
+          animation: animateBG2 20s infinite;
+  opacity: 0;
+}
+
+.index header .bg3 {
+  background-image: url("../../public/slideshow/pexels-run-ffwpu-2524739v2.jpg");
+  -webkit-animation: animateBG3 20s infinite;
+          animation: animateBG3 20s infinite;
+  opacity: 0;
 }
 
 .index header h1 {
@@ -581,5 +605,79 @@ footer div nav a svg {
   width: 500px;
   height: 100%;
   font-size: 17px;
+}
+
+@-webkit-keyframes animateBG1 {
+  0%,
+  30%,
+  100% {
+    opacity: 1;
+  }
+  34%,
+  96% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateBG1 {
+  0%,
+  30%,
+  100% {
+    opacity: 1;
+  }
+  34%,
+  96% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes animateBG2 {
+  0%,
+  30%,
+  67%,
+  100% {
+    opacity: 0;
+  }
+  34%,
+  63% {
+    opacity: 1;
+  }
+}
+
+@keyframes animateBG2 {
+  0%,
+  30%,
+  67%,
+  100% {
+    opacity: 0;
+  }
+  34%,
+  63% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animateBG3 {
+  0%,
+  63%,
+  100% {
+    opacity: 0;
+  }
+  67%,
+  96% {
+    opacity: 1;
+  }
+}
+
+@keyframes animateBG3 {
+  0%,
+  63%,
+  100% {
+    opacity: 0;
+  }
+  67%,
+  96% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=App.css.map */

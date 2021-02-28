@@ -1,18 +1,25 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Nav from '../Components/NavBar'
 import Carousel from '../Components/Carousel'
 
 import apparel from '../apparel'
-// import whiteLogo from '../public/assets/ASN-white-logo.png'
 
 const index = () => {
    const whiteLogo = '/assets/ASN-white-logo.png'
+   const background2 = '/slideshow/pexels-daniel-reche-3601094v2.jpg'
+   const background3 = '/slideshow/pexels-pixabay-209969v2.jpg'
+   const background4 = '/slideshow/pexels-pixabay-40751v2.jpg'
+   const background5 = '/slideshow/pexels-run-ffwpu-2524739v2.jpg'
+
    return (
       <div className='index'>
          <Nav logo={whiteLogo} />
          <header>
-            <div className='background' />
+            <div className='background bg1' />
+            <div className='background bg2' />
+            <div className='background bg3' />
             <h1>
                Build your <br /> <span className='red-text'>arsenal</span> of
                <span className='red-text'> sports nutrition</span> <br />
@@ -62,7 +69,6 @@ const index = () => {
          <section className='products-preview'>
             <h2>Products</h2>
             <p>Coming Soon</p>
-            {/* <div className='product-carousel'></div> */}
          </section>
          <section className='apparel-preview'>
             <h2>Apparel</h2>
