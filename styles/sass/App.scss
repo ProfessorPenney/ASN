@@ -119,17 +119,16 @@ html {
    .slide {
       position: absolute;
       top: 0;
-      // left: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: transform 500ms;
       width: 100%;
 
-      a {
-         margin: 20px;
-         max-width: 350px;
-      }
+      // a {
+      //    margin: 20px;
+      //    max-width: 350px;
+      // }
 
       &.shift-left {
          transform: translateX(0);
@@ -137,6 +136,8 @@ html {
 
       img {
          width: 100%;
+         margin: 20px;
+         max-width: 350px;
       }
 
       &:first-of-type {
@@ -175,8 +176,8 @@ footer {
       nav {
          width: 100px;
          list-style: none;
-         a {
-            color: black;
+         cursor: pointer;
+         li {
             &:hover {
                font-weight: 700;
                color: red;
@@ -274,11 +275,11 @@ footer {
          }
 
          h2 {
-            padding: 30px 0;
+            padding: 50px 0;
             font-size: 32px;
          }
          p {
-            padding: 40px 0;
+            padding: 60px 0;
             font-size: 20px;
          }
          hr {
@@ -327,11 +328,18 @@ footer {
          a {
             background-color: red;
             padding: 15px 25px;
+            margin: 30px 0;
             border-radius: 50px;
             color: white;
-            font-size: 20px;
+            font-size: 22px;
+            border: 2px solid transparent;
+            transition: all 400ms;
+            text-transform: uppercase;
             &:hover {
-               filter: brightness(1.7);
+               background-color: white;
+               color: red;
+               border: 2px solid red;
+               transform: scale(1.05);
             }
          }
       }
@@ -346,9 +354,11 @@ footer {
       padding-bottom: 200px;
       h2 {
          font-size: 40px;
+         padding: 40px 0;
       }
       p {
          font-size: 25px;
+         padding-bottom: 40px;
       }
    }
 
@@ -360,6 +370,7 @@ footer {
       h2 {
          font-size: 40px;
          text-align: center;
+         margin: 35px 0;
       }
    }
 }
@@ -416,11 +427,12 @@ footer {
    position: relative;
    min-height: 100vh;
    padding-top: 200px;
-   padding-bottom: 200px;
+   margin-bottom: 200px;
    color: black;
    text-align: center;
    overflow: hidden;
    &:before {
+      // bottom right ASN logo styles
       content: '';
       z-index: -1;
       width: 520px;
@@ -448,7 +460,6 @@ footer {
 
    .page-container {
       display: flex;
-      // justify-content: center;
       padding-bottom: 200px;
       max-width: 1000px;
       margin: auto;

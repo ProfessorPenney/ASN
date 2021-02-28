@@ -16,31 +16,31 @@ const Footer = () => {
                <Arrow2 /> &nbsp;
             </h3>
             <nav>
-               <Link href='/Home'>
+               <Link href='/'>
                   <li>
                      Home &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link href='/About'>
+               <Link href='/about'>
                   <li>
                      About &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link href='/Products'>
+               <Link href='/products'>
                   <li>
                      Products &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link href='/Apparel'>
+               <Link href='/apparel'>
                   <li>
                      Apparel &nbsp;
                      <Arrow1 />
                   </li>
                </Link>
-               <Link href='/Contact'>
+               <Link href='/contact'>
                   <li>
                      Contact &nbsp;
                      <Arrow1 />

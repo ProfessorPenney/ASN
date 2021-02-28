@@ -153,11 +153,6 @@ html a {
   width: 100%;
 }
 
-.carousel .slide a {
-  margin: 20px;
-  max-width: 350px;
-}
-
 .carousel .slide.shift-left {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -165,6 +160,8 @@ html a {
 
 .carousel .slide img {
   width: 100%;
+  margin: 20px;
+  max-width: 350px;
 }
 
 .carousel .slide:first-of-type {
@@ -214,24 +211,21 @@ footer div svg {
 footer div nav {
   width: 100px;
   list-style: none;
+  cursor: pointer;
 }
 
-footer div nav a {
-  color: black;
-}
-
-footer div nav a:hover {
+footer div nav li:hover {
   font-weight: 700;
   color: red;
 }
 
-footer div nav a:hover svg {
+footer div nav li:hover svg {
   width: 10px;
   -webkit-transition: width 200ms;
   transition: width 200ms;
 }
 
-footer div nav a svg {
+footer div nav li svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   width: 0px;
@@ -330,12 +324,12 @@ footer div nav a svg {
 }
 
 .index .site-preview div h2 {
-  padding: 30px 0;
+  padding: 50px 0;
   font-size: 32px;
 }
 
 .index .site-preview div p {
-  padding: 40px 0;
+  padding: 60px 0;
   font-size: 20px;
 }
 
@@ -407,14 +401,22 @@ footer div nav a svg {
 .index .about-preview div a {
   background-color: red;
   padding: 15px 25px;
+  margin: 30px 0;
   border-radius: 50px;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
+  border: 2px solid transparent;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  text-transform: uppercase;
 }
 
 .index .about-preview div a:hover {
-  -webkit-filter: brightness(1.7);
-          filter: brightness(1.7);
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .index .products-preview {
@@ -428,10 +430,12 @@ footer div nav a svg {
 
 .index .products-preview h2 {
   font-size: 40px;
+  padding: 40px 0;
 }
 
 .index .products-preview p {
   font-size: 25px;
+  padding-bottom: 40px;
 }
 
 .index .apparel-preview {
@@ -443,6 +447,7 @@ footer div nav a svg {
 .index .apparel-preview h2 {
   font-size: 40px;
   text-align: center;
+  margin: 35px 0;
 }
 
 .about {
@@ -498,7 +503,7 @@ footer div nav a svg {
   position: relative;
   min-height: 100vh;
   padding-top: 200px;
-  padding-bottom: 200px;
+  margin-bottom: 200px;
   color: black;
   text-align: center;
   overflow: hidden;
