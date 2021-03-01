@@ -29,7 +29,10 @@ const index = () => {
          <div className='site-preview'>
             <div>
                <h2>
-                  Master our <Link href='/About'>Mission</Link>
+                  Master our
+                  <Link href='/About'>
+                     <a> Mission</a>
+                  </Link>
                </h2>
                <hr />
                <p>
@@ -39,14 +42,20 @@ const index = () => {
             </div>
             <div>
                <h2>
-                  Realize our <Link href='/Products'>Products</Link>
+                  Realize our
+                  <Link href='/Products'>
+                     <a> Products</a>
+                  </Link>
                </h2>
                <hr />
                <p>World class products in a world class Arsenal</p>
             </div>
             <div>
                <h2>
-                  Wear our <Link href='/Apparel'>Apparel</Link>
+                  Wear our
+                  <Link href='/Apparel'>
+                     <a> Apparel</a>
+                  </Link>
                </h2>
                <hr />
                <p>Get the full experience by wearing our gear</p>

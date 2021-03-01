@@ -17,34 +17,44 @@ const Footer = () => {
             </h3>
             <nav>
                <Link href='/'>
-                  <li>
-                     Home &nbsp;
-                     <Arrow1 />
-                  </li>
+                  <a>
+                     <li>
+                        Home &nbsp;
+                        <Arrow1 />
+                     </li>
+                  </a>
                </Link>
                <Link href='/about'>
-                  <li>
-                     About &nbsp;
-                     <Arrow1 />
-                  </li>
+                  <a>
+                     <li>
+                        About &nbsp;
+                        <Arrow1 />
+                     </li>
+                  </a>
                </Link>
                <Link href='/products'>
-                  <li>
-                     Products &nbsp;
-                     <Arrow1 />
-                  </li>
+                  <a>
+                     <li>
+                        Products &nbsp;
+                        <Arrow1 />
+                     </li>
+                  </a>
                </Link>
                <Link href='/apparel'>
-                  <li>
-                     Apparel &nbsp;
-                     <Arrow1 />
-                  </li>
+                  <a>
+                     <li>
+                        Apparel &nbsp;
+                        <Arrow1 />
+                     </li>
+                  </a>
                </Link>
                <Link href='/contact'>
-                  <li>
-                     Contact &nbsp;
-                     <Arrow1 />
-                  </li>
+                  <a>
+                     <li>
+                        Contact &nbsp;
+                        <Arrow1 />
+                     </li>
+                  </a>
                </Link>
             </nav>
          </div>

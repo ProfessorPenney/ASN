@@ -160,8 +160,10 @@ const Nav = ({ logo }) => {
 
    return (
       <DivMain className={`nav ${navStyles.nav}`}>
-         <Link href='/' title='ASN Home'>
-            <img src={logo ? logo : blackLogo} alt='ASN logo' />
+         <Link href='/'>
+            <a title='ASN Home'>
+               <img src={logo ? logo : blackLogo} alt='ASN logo' />
+            </a>
          </Link>
          <NavEl animate={mobileMenu}>
             <Link href='/about' passHref>

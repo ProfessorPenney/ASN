@@ -25,7 +25,9 @@ const Slide = ({ firstItem, apparel, position }) => {
          style={{ transform: `translateX(${150 * (firstItem / 3 - position)}%` }}>
          {[item1, item2, item3].map(i => (
             <Link key={uuidv4()} href='/apparel'>
-               <img src={apparel[i].pic} alt={apparel[i].name} />
+               <a>
+                  <img src={apparel[i].pic} alt={apparel[i].name} />
+               </a>
             </Link>
          ))}
       </div>

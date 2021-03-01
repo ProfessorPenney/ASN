@@ -138,10 +138,10 @@ html {
       transition: transform 500ms;
       width: 100%;
 
-      // a {
-      //    margin: 20px;
-      //    max-width: 350px;
-      // }
+      a {
+         margin: 20px;
+         max-width: 350px;
+      }
 
       &.shift-left {
          transform: translateX(0);
@@ -149,8 +149,8 @@ html {
 
       img {
          width: 100%;
-         margin: 20px;
-         max-width: 350px;
+         // margin: 20px;
+         // max-width: 350px;
          cursor: pointer;
       }
 

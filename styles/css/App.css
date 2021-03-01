@@ -168,6 +168,11 @@ html a {
   width: 100%;
 }
 
+.carousel .slide a {
+  margin: 20px;
+  max-width: 350px;
+}
+
 .carousel .slide.shift-left {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -175,8 +180,6 @@ html a {
 
 .carousel .slide img {
   width: 100%;
-  margin: 20px;
-  max-width: 350px;
   cursor: pointer;
 }
 
