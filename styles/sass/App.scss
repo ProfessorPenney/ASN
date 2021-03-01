@@ -244,17 +244,17 @@ footer {
       }
 
       .bg1 {
-         background-image: url('../../public/slideshow/pexels-victor-freitas-841130v2.jpg');
+         background-image: url('../../public/slideshow/pexels-victor-freitas-841130v2-tiny.jpg');
          animation: animateBG1 20s infinite;
          opacity: 1;
       }
       .bg2 {
-         background-image: url('../../public/slideshow/pexels-pixabay-40751v2.jpg');
+         background-image: url('../../public/slideshow/pexels-pixabay-40751v2-tiny.jpg');
          animation: animateBG2 20s infinite;
          opacity: 0;
       }
       .bg3 {
-         background-image: url('../../public/slideshow/pexels-run-ffwpu-2524739v2.jpg');
+         background-image: url('../../public/slideshow/pexels-run-ffwpu-2524739v2-tiny.jpg');
          animation: animateBG3 20s infinite;
          opacity: 0;
       }
@@ -454,7 +454,7 @@ footer {
       height: 160px;
       position: absolute;
       right: -200px;
-      bottom: 100px;
+      bottom: -100px;
       transform-origin: left;
       transform: rotate(-45deg);
       background-image: url('../../public/assets/asn-logo-nowords.png');

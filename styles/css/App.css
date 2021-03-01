@@ -285,21 +285,21 @@ footer div nav li svg {
 }
 
 .index header .bg1 {
-  background-image: url("../../public/slideshow/pexels-victor-freitas-841130v2.jpg");
+  background-image: url("../../public/slideshow/pexels-victor-freitas-841130v2-tiny.jpg");
   -webkit-animation: animateBG1 20s infinite;
           animation: animateBG1 20s infinite;
   opacity: 1;
 }
 
 .index header .bg2 {
-  background-image: url("../../public/slideshow/pexels-pixabay-40751v2.jpg");
+  background-image: url("../../public/slideshow/pexels-pixabay-40751v2-tiny.jpg");
   -webkit-animation: animateBG2 20s infinite;
           animation: animateBG2 20s infinite;
   opacity: 0;
 }
 
 .index header .bg3 {
-  background-image: url("../../public/slideshow/pexels-run-ffwpu-2524739v2.jpg");
+  background-image: url("../../public/slideshow/pexels-run-ffwpu-2524739v2-tiny.jpg");
   -webkit-animation: animateBG3 20s infinite;
           animation: animateBG3 20s infinite;
   opacity: 0;
@@ -534,7 +534,7 @@ footer div nav li svg {
   height: 160px;
   position: absolute;
   right: -200px;
-  bottom: 100px;
+  bottom: -100px;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transform: rotate(-45deg);
