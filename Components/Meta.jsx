@@ -7,7 +7,7 @@ const Meta = ({ title, keywords, description }) => {
          <meta name='keywords' content={keywords} />
          <meta name='ASN' content='Asenal Sports Nutrition Store' />
          <meta name='description' content={description} />
-         <meta charSet='utf-8' />
+         <meta charset='utf-8' />
          <link rel='icon' href='/favicon.ico' />
          <title>{title}</title>
       </Head>
@@ -15,7 +15,7 @@ const Meta = ({ title, keywords, description }) => {
 }
 
 Meta.defaultProps = {
-   title: 'ASN',
+   title: 'Arsenal Sports Nutrition',
    keywords: 'arsenal, sports nutrition, supplements',
    description: 'Build Your Arsenal of Sports Nutrition Products'
 }
