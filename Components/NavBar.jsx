@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import navStyles from '../styles/css/NavBar.module.css'
 // import blackLogo from '../assets/asn-logo-nowords.png'
 
-const blackLogo = '/assets/asn-logo-nowords.png'
+const blackLogo = '/assets/tiny/asn-logo-nowords.png'
 
 const DivMain = styled.div`
    /* background-color: black; // color */

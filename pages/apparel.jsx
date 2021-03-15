@@ -2,7 +2,7 @@ import Nav from '../Components/NavBar'
 // import shirtsPic from '../assets/shirts.jpg'
 
 const apparel = () => {
-   const shirtsPic = '/assets/shirts.jpg'
+   const shirtsPic = '/assets/tiny/shirts.jpg'
    return (
       <div className='apparel'>
          <Nav />

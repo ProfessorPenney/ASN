@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { v4 as uuidv4 } from 'uuid'
 
-const Slide = ({ firstItem, apparel, position }) => {
+const Slide = ({ firstItem, apparel, position, loading = 'eager' }) => {
    const [item1, setItem1] = useState(0)
    const [item2, setItem2] = useState(0)
    const [item3, setItem3] = useState(0)
@@ -26,7 +26,7 @@ const Slide = ({ firstItem, apparel, position }) => {
          {[item1, item2, item3].map(i => (
             <Link key={uuidv4()} href='/apparel'>
                <a>
-                  <img src={apparel[i].pic} alt={apparel[i].name} />
+                  <img src={apparel[i].pic} alt={apparel[i].name} loading={loading} />
                </a>
             </Link>
          ))}

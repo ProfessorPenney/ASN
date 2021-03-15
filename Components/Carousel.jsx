@@ -15,9 +15,12 @@ const Carousel = ({ apparel }) => {
    const leftButton = () => {
       setPosition(val => val - 1)
    }
+   const firstSlide = (
+      <Slide key='1' firstItem='0' apparel={apparel} position={position} loading='lazy' />
+   )
 
-   let slides = []
-   for (let i = 0; i < numOfSlides; i++) {
+   const slides = []
+   for (let i = 1; i < numOfSlides; i++) {
       slides.push(<Slide key={i} firstItem={i * 3} apparel={apparel} position={position} />)
    }
 
@@ -27,6 +30,7 @@ const Carousel = ({ apparel }) => {
             <hr className='top' />
             <hr className='bottom' />
          </button>
+         {firstSlide}
          {slides}
          <button className='right' onClick={() => rightButton()}>
             <hr className='top' />

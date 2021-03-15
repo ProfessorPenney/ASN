@@ -243,17 +243,15 @@ footer {
 
       .bg1 {
          background-image: url('../../public/slideshow/pexels-victor-freitas-841130v2-tiny.jpg');
-         animation: animateBG1 20s infinite;
+         animation: animateBG1 24s infinite;
          opacity: 1;
       }
       .bg2 {
-         background-image: url('../../public/slideshow/pexels-pixabay-40751v2-tiny.jpg');
-         animation: animateBG2 20s infinite;
+         animation: animateBG2 24s infinite;
          opacity: 0;
       }
       .bg3 {
-         background-image: url('../../public/slideshow/pexels-run-ffwpu-2524739v2-tiny.jpg');
-         animation: animateBG3 20s infinite;
+         animation: animateBG3 24s infinite;
          opacity: 0;
       }
 
@@ -455,7 +453,7 @@ footer {
       bottom: -100px;
       transform-origin: left;
       transform: rotate(-45deg);
-      background-image: url('../../public/assets/asn-logo-nowords.png');
+      background-image: url('../../public/assets/tiny/asn-logo-nowords.png');
       background-repeat: no-repeat;
       opacity: 0.5;
    }
@@ -540,7 +538,6 @@ footer {
 }
 
 @keyframes animateBG1 {
-   0%,
    30%,
    100% {
       opacity: 1;
@@ -549,12 +546,12 @@ footer {
    96% {
       opacity: 0;
    }
+   
 }
 @keyframes animateBG2 {
-   0%,
    30%,
-   67%,
-   100% {
+   67% {
+      background-image: url('../../public/slideshow/pexels-pixabay-40751v2-tiny.jpg');
       opacity: 0;
    }
    34%,
@@ -563,9 +560,9 @@ footer {
    }
 }
 @keyframes animateBG3 {
-   0%,
    63%,
    100% {
+      background-image: url('../../public/slideshow/pexels-run-ffwpu-2524739v2-tiny.jpg');
       opacity: 0;
    }
    67%,
