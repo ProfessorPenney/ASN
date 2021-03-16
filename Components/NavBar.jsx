@@ -197,6 +197,14 @@ const Nav = ({ logo = blackLogo, page = '' }) => {
                   </Li>
                </A>
             </Link>
+            <Link href='/login' passHref>
+               <A style={{ transition: 'opacity 1.3s 1s' }}>
+                  <Li>
+                     Login
+                     <HrUnderline />
+                  </Li>
+               </A>
+            </Link>
          </NavEl>
          <DivBurger animate={mobileMenu} onClick={() => setMobileMenu(value => !value)}>
             <Hr1 className='burg1' />

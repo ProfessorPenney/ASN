@@ -39,7 +39,7 @@ const contact = () => {
 
    return (
       <div className={contactStyles.contact}>
-         <Nav />
+         <Nav page='contact' />
          <h2>
             Contact <span>Arsenal</span>
          </h2>
