@@ -1,0 +1,106 @@
+.contact {
+   position: relative;
+   min-height: 100vh;
+   padding-top: 200px;
+   margin-bottom: 200px;
+   color: black;
+   text-align: center;
+   overflow: hidden;
+   &:before {
+      // bottom right ASN logo styles
+      content: '';
+      z-index: -1;
+      width: 520px;
+      height: 160px;
+      position: absolute;
+      right: -200px;
+      bottom: -100px;
+      transform-origin: left;
+      transform: rotate(-45deg);
+      background-image: url('../public/assets/tiny/asn-logo-nowords.png');
+      background-repeat: no-repeat;
+      opacity: 0.5;
+   }
+
+   .nav nav a:nth-of-type(4) hr {
+      background-color: red;
+      width: 100%;
+   }
+
+   h2 {
+      span {
+         color: red;
+      }
+   }
+
+   .container {
+      display: flex;
+      padding-bottom: 200px;
+      max-width: 1000px;
+      margin: auto;
+
+      .left {
+         margin-right: 80px;
+         p {
+            text-align: left;
+            font-size: 17px;
+            a {
+               color: red;
+
+               &:hover {
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+
+      form {
+         div {
+            position: relative;
+            text-align: left;
+            padding: 20px 0;
+            width: 500px;
+
+            label {
+               height: 40px;
+            }
+            input {
+               position: absolute;
+               left: 100px;
+               width: 500px;
+               height: 40px;
+               font-size: 17px;
+            }
+
+            .feedback {
+               height: 30px;
+               color: red;
+            }
+
+            button {
+               background-color: red;
+               color: white;
+               height: 40px;
+               width: 100px;
+               border: none;
+               font-size: 20px;
+               transition: transform 200ms;
+               &:hover {
+                  background-color: rgb(228, 0, 0);
+                  transform: scale(1.1);
+               }
+            }
+         }
+         .message {
+            height: 120px;
+            textarea {
+               position: absolute;
+               left: 100px;
+               width: 500px;
+               height: 100%;
+               font-size: 17px;
+            }
+         }
+      }
+   }
+}

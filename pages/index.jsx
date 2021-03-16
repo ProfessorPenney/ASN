@@ -3,25 +3,27 @@ import Link from 'next/link'
 import Nav from '../Components/NavBar'
 import Carousel from '../Components/Carousel'
 
+import indexStyles from './index.module.scss'
+
 import apparel from '../apparel'
 
 const index = () => {
    const whiteLogo = '/assets/tiny/ASN-white-logo.png'
 
    return (
-      <div className='index'>
-         <Nav logo={whiteLogo} />
+      <div className={indexStyles.index}>
+         <Nav logo={whiteLogo} page='index' />
          <header>
-            <div className='background bg1' />
-            <div className='background bg2' />
-            <div className='background bg3' />
+            <div className={indexStyles.bg1} />
+            <div className={indexStyles.bg2} />
+            <div className={indexStyles.bg3} />
             <h1>
-               Build your <br /> <span className='red-text'>arsenal</span> of
-               <span className='red-text'> sports nutrition</span> <br />
+               Build your <br /> <span>arsenal</span> of
+               <span> sports nutrition</span> <br />
                products
             </h1>
          </header>
-         <div className='site-preview'>
+         <div className={indexStyles['site-preview']}>
             <div>
                <h2>
                   Master our
@@ -56,7 +58,7 @@ const index = () => {
                <p>Get the full experience by wearing our gear</p>
             </div>
          </div>
-         <section className='about-preview'>
+         <section className={indexStyles['about-preview']}>
             <h2>
                Our <span>Pledge</span>
             </h2>
@@ -70,11 +72,11 @@ const index = () => {
                <Link href='/About'>Learn More</Link>
             </div>
          </section>
-         <section className='products-preview'>
+         <section className={indexStyles['products-preview']}>
             <h2>Products</h2>
             <p>Coming Soon</p>
          </section>
-         <section className='apparel-preview'>
+         <section className={indexStyles['apparel-preview']}>
             <h2>Apparel</h2>
             <Carousel apparel={apparel} />
          </section>

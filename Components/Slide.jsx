@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { v4 as uuidv4 } from 'uuid'
 
+import slideStyles from './slide.module.scss'
+
 const Slide = ({ firstItem, apparel, position, loading = 'eager' }) => {
    const [item1, setItem1] = useState(0)
    const [item2, setItem2] = useState(0)
@@ -21,7 +23,7 @@ const Slide = ({ firstItem, apparel, position, loading = 'eager' }) => {
 
    return (
       <div
-         className='slide'
+         className={slideStyles.slide}
          style={{ transform: `translateX(${150 * (firstItem / 3 - position)}%` }}>
          {[item1, item2, item3].map(i => (
             <Link key={uuidv4()} href='/apparel'>

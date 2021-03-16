@@ -154,14 +154,14 @@ const Li = styled.li`
    list-style: none;
 `
 
-const Nav = ({ logo }) => {
+const Nav = ({ logo = blackLogo, page = '' }) => {
    const [mobileMenu, setMobileMenu] = useState(false)
 
    return (
-      <DivMain className={`nav ${navStyles.nav}`}>
+      <DivMain className={`${navStyles.nav} ${navStyles[page]}`}>
          <Link href='/'>
             <a title='ASN Home'>
-               <img src={logo ? logo : blackLogo} alt='ASN logo' />
+               <img src={logo} alt='ASN logo' />
             </a>
          </Link>
          <NavEl animate={mobileMenu}>

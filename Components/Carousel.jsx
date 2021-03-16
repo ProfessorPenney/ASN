@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Slide from './Slide'
 
+import carouselStyles from './carousel.module.scss'
+
 const Carousel = ({ apparel }) => {
    const [numOfSlides, setNumOfSlides] = useState(2)
    const [position, setPosition] = useState(0)
@@ -25,16 +27,16 @@ const Carousel = ({ apparel }) => {
    }
 
    return (
-      <div className='carousel'>
-         <button className='left' onClick={() => leftButton()} disabled={!position}>
-            <hr className='top' />
-            <hr className='bottom' />
+      <div className={carouselStyles.carousel}>
+         <button className={carouselStyles.left} onClick={() => leftButton()} disabled={!position}>
+            <hr className={carouselStyles.top} />
+            <hr className={carouselStyles.bottom} />
          </button>
          {firstSlide}
          {slides}
-         <button className='right' onClick={() => rightButton()}>
-            <hr className='top' />
-            <hr className='bottom' />
+         <button className={carouselStyles.right} onClick={() => rightButton()}>
+            <hr className={carouselStyles.top} />
+            <hr className={carouselStyles.bottom} />
          </button>
       </div>
    )

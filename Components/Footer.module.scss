@@ -1,0 +1,49 @@
+.footer {
+   min-height: 200px;
+   margin-top: -200px;
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   padding-top: 40px;
+   padding-bottom: 80px;
+   background-color: black;
+   color: rgb(240, 240, 240);
+   p span {
+      color: red;
+   }
+   div {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+         margin: 0;
+      }
+
+      svg {
+         fill: red;
+         position: relative;
+         bottom: -6px;
+         width: 12px;
+      }
+
+      nav {
+         width: 100px;
+         list-style: none;
+         cursor: pointer;
+         li {
+            &:hover {
+               font-weight: 700;
+               color: red;
+               svg {
+                  width: 10px;
+                  transition: width 200ms;
+               }
+            }
+
+            svg {
+               transform: rotate(180deg);
+               width: 0px;
+            }
+         }
+      }
+   }
+}

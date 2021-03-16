@@ -3,9 +3,11 @@ import Link from 'next/link'
 import Arrow2 from './DoubleArrow'
 import Arrow1 from './SingleArow'
 
+import footerStyles from './Footer.module.scss'
+
 const Footer = () => {
    return (
-      <footer>
+      <footer className={footerStyles.footer}>
          <p>
             Copyright &#169; {new Date().getFullYear()} <span>Arsenal Sports Nutrition</span> - All
             Rights Reserved

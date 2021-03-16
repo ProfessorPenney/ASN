@@ -1,0 +1,11 @@
+.products {
+   min-height: 100vh;
+   padding-top: 200px;
+   color: black;
+   text-align: center;
+
+   .nav nav a:nth-of-type(2) hr {
+      background-color: red;
+      width: 100%;
+   }
+}

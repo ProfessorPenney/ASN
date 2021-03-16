@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Nav from '../Components/NavBar'
 
+import contactStyles from './contact.module.scss'
+
 const contact = () => {
    const [feedback, setFeedback] = useState('')
    const [name, setName] = useState('')
@@ -36,13 +38,13 @@ const contact = () => {
    }
 
    return (
-      <div className='contact'>
+      <div className={contactStyles.contact}>
          <Nav />
          <h2>
             Contact <span>Arsenal</span>
          </h2>
-         <div className='page-container'>
-            <div className='left'>
+         <div className={contactStyles.container}>
+            <div className={contactStyles.left}>
                <p>
                   <a href='mailto:steve@arsenalsportsnutrition.com'>Email: </a>
                   <br />
@@ -51,9 +53,7 @@ const contact = () => {
             </div>
             <form>
                <div>
-                  <label className='grid-item' htmlFor='name'>
-                     Name:
-                  </label>
+                  <label htmlFor='name'>Name:</label>
                   <input
                      value={name}
                      name='name'
@@ -63,9 +63,7 @@ const contact = () => {
                   />
                </div>
                <div>
-                  <label className='grid-item' htmlFor='email'>
-                     Email:
-                  </label>
+                  <label htmlFor='email'>Email:</label>
                   <input
                      value={email}
                      name='email'
@@ -74,10 +72,8 @@ const contact = () => {
                      onChange={e => setEmail(e.target.value)}
                   />
                </div>
-               <div className='message-div'>
-                  <label className='grid-item' htmlFor='messsage'>
-                     Message:
-                  </label>
+               <div className={contactStyles.message}>
+                  <label htmlFor='messsage'>Message:</label>
                   <textarea
                      value={message}
                      name='message'
@@ -86,7 +82,7 @@ const contact = () => {
                   />
                </div>
                <div>
-                  <p className='feedback'>{feedback}</p>
+                  <p className={contactStyles.feedback}>{feedback}</p>
                   <button type='submit' onClick={e => buttonClick(e)}>
                      Submit
                   </button>

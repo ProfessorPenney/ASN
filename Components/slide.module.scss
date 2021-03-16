@@ -1,0 +1,23 @@
+.slide {
+   position: absolute;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: transform 500ms;
+   width: 100%;
+
+   a {
+      margin: 20px;
+      max-width: 350px;
+   }
+
+   img {
+      width: 100%;
+      cursor: pointer;
+   }
+
+   &:first-of-type {
+      position: relative;
+   }
+}
