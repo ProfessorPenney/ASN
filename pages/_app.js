@@ -1,6 +1,6 @@
 import Footer from '../Components/Footer'
 import Meta from '../Components/Meta'
-import '../styles/css/App.css'
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {
    return (
