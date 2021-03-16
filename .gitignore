@@ -25,3 +25,5 @@ yarn-error.log*
 .next
 
 /public/assets/original
+
+.env
