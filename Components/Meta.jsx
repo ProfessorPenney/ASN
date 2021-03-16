@@ -7,7 +7,6 @@ const Meta = ({ title, keywords, description }) => {
          <meta name='keywords' content={keywords} />
          <meta name='ASN' content='Asenal Sports Nutrition Store' />
          <meta name='description' content={description} />
-         <meta charset='utf-8' />
          <link rel='icon' href='/favicon.ico' />
          <title>{title}</title>
       </Head>
