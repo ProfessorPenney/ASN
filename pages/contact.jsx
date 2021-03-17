@@ -24,7 +24,7 @@ const contact = () => {
          setEmail('')
          setPhone('')
          setMessage('')
-         fetch('/contactform', {
+         fetch('/api/contact', {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({
@@ -34,6 +34,10 @@ const contact = () => {
                message
             })
          })
+            .then(res => res.text())
+            .then(message => {
+               if (message !== '') console.log(data)
+            })
       }
    }
 
