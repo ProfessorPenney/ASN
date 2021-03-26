@@ -3,4 +3,50 @@
    padding-top: 200px;
    color: black;
    text-align: center;
+
+   .container {
+      max-width: 1250px;
+      margin: auto;
+      padding-bottom: 300px;
+
+      h2 {
+         margin: 0 0 40px;
+      }
+
+      .product {
+         display: flex;
+         align-items: stretch;
+
+         img {
+            max-width: 500px;
+         }
+
+         .right {
+            display: flex;
+            flex-direction: column;
+            padding: 0 40px;
+
+            p {
+               font-size: 25px;
+               flex-grow: 1;
+            }
+            a {
+               background-color: red;
+               padding: 15px 25px;
+               border-radius: 50px;
+               color: white;
+               font-size: 22px;
+               border: 2px solid transparent;
+               transition: all 400ms;
+               text-transform: uppercase;
+               &:hover {
+                  background-color: white;
+                  color: red;
+                  border: 2px solid red;
+                  transform: scale(1.05);
+               }
+            }
+         }
+      }
+   }
 }

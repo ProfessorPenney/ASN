@@ -19,8 +19,9 @@ const Login = () => {
          )}
          {session && (
             <>
-               Signed in email {session.user.email} <br />
-               name {session.user.name} <br />
+               Signed in email - {session.user.email} <br />
+               name - {session.user.name} <br />
+               image - <img src={session.user.image} alt='user image' /> <br />
                <div>Now you can access our super secret pages</div>
                <button onClick={() => signOut()}>Sign Out</button>
             </>
