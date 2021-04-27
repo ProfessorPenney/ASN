@@ -1,4 +1,3 @@
-
 .index {
    margin-bottom: 200px;
    width: 100%;
@@ -29,21 +28,32 @@
          width: 100%;
          background-position: top;
          background-size: cover;
-         filter: brightness(0.7);
+         filter: brightness(0.8);
+         opacity: 0;
       }
 
       .bg1 {
-         background-image: url('../public/slideshow/pexels-victor-freitas-841130v2-tiny.jpg');
-         animation: animateBG1 24s infinite;
+         background-image: url('../public/slideshow-tiny/1.jpg');
+         animation: animateBG1 56s infinite;
          opacity: 1;
       }
       .bg2 {
-         animation: animateBG2 24s infinite;
-         opacity: 0;
+         animation: animateBG2 56s infinite;
       }
       .bg3 {
-         animation: animateBG3 24s infinite;
-         opacity: 0;
+         animation: animateBG3 56s infinite;
+      }
+      .bg4 {
+         animation: animateBG4 56s infinite;
+      }
+      .bg5 {
+         animation: animateBG5 56s infinite;
+      }
+      .bg6 {
+         animation: animateBG6 56s infinite;
+      }
+      .bg7 {
+         animation: animateBG7 56s infinite;
       }
 
       h1 {
@@ -179,36 +189,111 @@
    }
 }
 
+// @keyframes animateBG1 {
+//    30%,
+//    100% {
+//       opacity: 1;
+//    }
+//    34%,
+//    96% {
+//       opacity: 0;
+//    }
+// }
+// @keyframes animateBG2 {
+//    30%,
+//    67% {
+//       background-image: url('../public/slideshow-tiny/2.jpg');
+//       opacity: 0;
+//    }
+//    34%,
+//    63% {
+//       opacity: 1;
+//    }
+// }
+// @keyframes animateBG3 {
+//    63%,
+//    100% {
+//       background-image: url('../public/slideshow-tiny/3.jpg');
+//       opacity: 0;
+//    }
+//    67%,
+//    96% {
+//       opacity: 1;
+//    }
+// }
 @keyframes animateBG1 {
-   30%,
+   14%,
    100% {
       opacity: 1;
    }
-   34%,
-   96% {
+   16%,
+   97% {
       opacity: 0;
    }
-   
 }
 @keyframes animateBG2 {
-   30%,
-   67% {
-      background-image: url('../public/slideshow/pexels-pixabay-40751v2-tiny.jpg');
+   13%,
+   30% {
+      background-image: url('../public/slideshow-tiny/2.jpg');
       opacity: 0;
    }
-   34%,
-   63% {
+   16%,
+   28% {
       opacity: 1;
    }
 }
 @keyframes animateBG3 {
-   63%,
-   100% {
-      background-image: url('../public/slideshow/pexels-run-ffwpu-2524739v2-tiny.jpg');
+   27%,
+   44% {
+      background-image: url('../public/slideshow-tiny/3.jpg');
       opacity: 0;
    }
-   67%,
-   96% {
+   30%,
+   42% {
+      opacity: 1;
+   }
+}
+@keyframes animateBG4 {
+   41%,
+   58% {
+      background-image: url('../public/slideshow-tiny/4.jpg');
+      opacity: 0;
+   }
+   44%,
+   56% {
+      opacity: 1;
+   }
+}
+@keyframes animateBG5 {
+   55%,
+   72% {
+      background-image: url('../public/slideshow-tiny/5.jpg');
+      opacity: 0;
+   }
+   58%,
+   70% {
+      opacity: 1;
+   }
+}
+@keyframes animateBG6 {
+   69%,
+   86% {
+      background-image: url('../public/slideshow-tiny/6.jpg');
+      opacity: 0;
+   }
+   72%,
+   84% {
+      opacity: 1;
+   }
+}
+@keyframes animateBG7 {
+   83%,
+   100% {
+      background-image: url('../public/slideshow-tiny/7.jpg');
+      opacity: 0;
+   }
+   86%,
+   98% {
       opacity: 1;
    }
 }

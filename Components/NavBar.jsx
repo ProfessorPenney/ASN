@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import navStyles from './NavBar.module.scss'
 
-const blackLogo = '/assets/tiny/asn-logo-nowords.png'
+const blackLogo = '/assets/newlogos/horizontal logo black.png'
 
 const DivMain = styled.div`
    /* background-color: black; // color */
@@ -197,14 +197,14 @@ const Nav = ({ logo = blackLogo, page = '' }) => {
                   </Li>
                </A>
             </Link>
-            <Link href='/login' passHref>
+            {/* <Link href='/login' passHref>
                <A style={{ transition: 'opacity 1.3s 1s' }}>
                   <Li>
                      Login
                      <HrUnderline />
                   </Li>
                </A>
-            </Link>
+            </Link> */}
          </NavEl>
          <DivBurger animate={mobileMenu} onClick={() => setMobileMenu(value => !value)}>
             <Hr1 className='burg1' />

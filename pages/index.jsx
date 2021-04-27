@@ -8,7 +8,7 @@ import indexStyles from './index.module.scss'
 import apparel from '../apparel'
 
 const index = () => {
-   const whiteLogo = '/assets/tiny/ASN-white-logo.png'
+   const whiteLogo = '/assets/newlogos/horizontal logo white.png'
 
    return (
       <div className={indexStyles.index}>
@@ -17,6 +17,10 @@ const index = () => {
             <div className={indexStyles.bg1} />
             <div className={indexStyles.bg2} />
             <div className={indexStyles.bg3} />
+            <div className={indexStyles.bg4} />
+            <div className={indexStyles.bg5} />
+            <div className={indexStyles.bg6} />
+            <div className={indexStyles.bg7} />
             <h1>
                Build your <br /> <span>arsenal</span> of
                <span> sports nutrition</span> <br />
