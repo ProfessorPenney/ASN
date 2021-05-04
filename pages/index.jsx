@@ -31,7 +31,7 @@ const index = () => {
             <div>
                <h2>
                   Master our
-                  <Link href='/About'>
+                  <Link href='/about'>
                      <a> Mission</a>
                   </Link>
                </h2>
@@ -44,7 +44,7 @@ const index = () => {
             <div>
                <h2>
                   Realize our
-                  <Link href='/Products'>
+                  <Link href='/products'>
                      <a> Products</a>
                   </Link>
                </h2>
@@ -54,7 +54,7 @@ const index = () => {
             <div>
                <h2>
                   Wear our
-                  <Link href='/Apparel'>
+                  <Link href='/apparel'>
                      <a> Apparel</a>
                   </Link>
                </h2>
@@ -73,7 +73,7 @@ const index = () => {
                   system. We are committed to supporting veterans, law enforcement, and all first
                   responders. With every purchase you make, we give back!
                </p>
-               <Link href='/About'>Learn More</Link>
+               <Link href='/about'>Learn More</Link>
             </div>
          </section>
          <section className={indexStyles['products-preview']}>
