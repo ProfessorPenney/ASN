@@ -23,8 +23,8 @@ const Products = () => {
    return (
       <div className={productStyles.products}>
          <Nav page='products' />
-         {/* <h2>Products Coming Soon</h2> */}
-         <div className={productStyles.container}>
+         <h2>Products Coming Soon</h2>
+         {/* <div className={productStyles.container}>
             <h2>Protein Powder</h2>
             <div className={productStyles.product}>
                <img src='/assets/original/protein-powders.jpg' alt='Protein Powder' />
@@ -33,7 +33,7 @@ const Products = () => {
                   <a onClick={addSale}>Add to Cart</a>
                </div>
             </div>
-         </div>
+         </div> */}
       </div>
    )
 }
