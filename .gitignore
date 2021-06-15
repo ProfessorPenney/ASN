@@ -19,5 +19,10 @@ yarn-error.log*
 .next
 
 /public/assets
+/public/old slideshow
+/public/slideshow
+/public/slideshow-sized
+/public/slideshow-tiny
 
 .env
+bfg-1.14.0.jar
