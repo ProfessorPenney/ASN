@@ -5,12 +5,6 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
-
-# production
-/build
-
 # misc
 .DS_Store
 .env.local
@@ -24,7 +18,6 @@ yarn-error.log*
 
 .next
 
-/public/assets/original
-/public/assets/random
+/public
 
 .env
