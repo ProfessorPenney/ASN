@@ -87,7 +87,7 @@ const contact = () => {
                </div>
                <div>
                   <p className={contactStyles.feedback}>{feedback}</p>
-                  <button type='submit' onClick={e => buttonClick(e)}>
+                  <button type='submit' onSubmit={e => buttonClick(e)}>
                      Submit
                   </button>
                </div>

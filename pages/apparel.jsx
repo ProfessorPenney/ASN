@@ -4,13 +4,15 @@ import Nav from '../Components/NavBar'
 import apparelStyles from './apparel.module.scss'
 
 const apparel = () => {
-   const shirtsPic = '/assets/tiny/shirts.jpg'
+   const shirtsPic1 = '/assets/original/Shirt1.jpeg'
+   const shirtsPic2 = '/assets/original/Shirt2.jpeg'
    return (
       <div className={apparelStyles.apparel}>
          <Nav page='apparel' />
          <h2>Shirts are in!</h2>
          <div className={apparelStyles.shirtDiv}>
-            <img src={shirtsPic} alt='Four shirt styles' />
+            <img src={shirtsPic1} alt='Shirts with ASN logo' />
+            <img src={shirtsPic2} alt='Shirts with ASN emblem' />
          </div>
       </div>
    )

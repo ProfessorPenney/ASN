@@ -8,9 +8,9 @@ import CheckoutForm from '../Components/CheckoutForm'
 
 import checkoutStyles from './checkout.module.scss'
 
-const stripePromise = loadStripe(
-   pk_test_51IZ6jHHtQFYdcYXUkdLz8LYMutVV6sfz9Q4wbAeRbSc7N8IqBmfhrATr7WQtHPg0DsugMwaGzwvlvPoiIu3oDHFw009WR5ti0A
-)
+// const stripePromise = loadStripe(
+//    pk_test_51IZ6jHHtQFYdcYXUkdLz8LYMutVV6sfz9Q4wbAeRbSc7N8IqBmfhrATr7WQtHPg0DsugMwaGzwvlvPoiIu3oDHFw009WR5ti0A
+// )
 
 export const getServerSideProps = async ctx => {
    const stripe = new Stripe(process.env.STRIPE_SK)
@@ -105,9 +105,9 @@ const Checkout = ({ paymentIntent }) => {
       <>
          <Nav page='products' />
          <div className={checkoutStyles.container}>
-            <Elements stripe={stripePromise}>
+            {/* <Elements stripe={stripePromise}>
                <CheckoutForm paymentIntent={paymentIntent} />
-            </Elements>
+            </Elements> */}
          </div>
       </>
    )
